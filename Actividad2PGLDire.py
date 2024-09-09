@@ -23,7 +23,7 @@ def agregar_usuario():
     fecha_creacion = input("Ingrese la fecha de creación: ")
     usuario = Usuario(nombrecompleto, nickname, clave, tipo, fecha_creacion)
     usuarios.append(usuario)
-    print("Usuario agregado exitosamente.")
+    print("Usuario agregado ")
 
 def buscar_usuario(value):
     for usuario in usuarios:
