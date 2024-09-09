@@ -47,7 +47,7 @@ def menu():
         if opcion == '1':
             agregar_usuario()
         elif opcion == '2':
-            value = input("Ingrese el nombre completo, nickname, clave, tipo o fecha de creación del usuario para buscar: ")
+            value = input("Puede Ingresar el nombre completo o nickname o el tipo o la fecha de creación del usuario para hacer la buscar: ")
             usuario = buscar_usuario(value)
             if usuario:
                 print("Usuario encontrado:")
@@ -55,10 +55,10 @@ def menu():
             else:
                 print("Usuario no encontrado.")
         elif opcion == '3':
-            value = input("Ingrese el nombre completo, nickname, clave, tipo o fecha de creación del usuario para eliminar: ")
+            value = input("Puede Ingresar el nombre completo o nickname o el tipo del usuario para eliminar: ")
             eliminar_usuario(value)
         else:
-            print("Opción no válida.")
+            print("Opcion no válida.")
 
 usuarios = []
 
