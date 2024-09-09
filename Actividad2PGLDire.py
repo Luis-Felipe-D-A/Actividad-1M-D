@@ -47,7 +47,7 @@ def menu():
         if opcion == '1':
             agregar_usuario()
         elif opcion == '2':
-            value = input("Puede Ingresar el nombre completo o nickname o el tipo o la fecha de creación del usuario para hacer la buscar: ")
+            value = input("Puede Ingresar el nombre completo o nickname o el tipo o la fecha de creación del usuario para buscar: ")
             usuario = buscar_usuario(value)
             if usuario:
                 print("Usuario encontrado:")
